@@ -1,0 +1,27 @@
+{
+  "name": "employeeRegistration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adecapite/employeeRegistration.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adecapite/employeeRegistration/issues"
+  },
+  "homepage": "https://github.com/adecapite/employeeRegistration#readme",
+  "dependencies": {
+    "inquire": "^0.4.8"
+  }
+}
