@@ -21,5 +21,6 @@ class Employee {
     return this.role;
   }
 
-  module.exports = Employee
+
 }
+module.exports = Employee;
