@@ -15,7 +15,7 @@ describe("Employee", () => {
 describe("Employee name", () => {
   // testing the value returned by getName method
   it("Returns the employee's name when a new employee is added", () => {
-    // expecting return value to be 'Zoe'
+    // expecting return value to be 'Anthony'
     expect(employee.getName()).toBe("Anthony");
   });
 });
@@ -31,7 +31,7 @@ describe("Employee ID", () => {
 describe("Employee email", () => {
   // testing the value returned by getEmail method
   it("Returns the employee's email when a new employee is added", () => {
-    // expecting return value to be 'zoe@email.com'
+    // expecting return value to be 'anthony@email.com'
     expect(employee.getEmail()).toBe("anthony@email.com");
   });
 });

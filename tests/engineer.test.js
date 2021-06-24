@@ -1,14 +1,14 @@
 // including Employee class to test
-const Engineer = require("../lib/Engineer");
+const Engineer = require("../library/engineer");
 // setting new Engineer with arguments into a variable
-const engineer = new Engineer("Zoe", 1, "zoe@email.com", "ZJY2017");
+const engineer = new Engineer("Anthony", 1, "anthony@email.com", "addecapite");
 
 // 'describing' -- (testing) -- Engineer class method getGithub()
 describe("Engineer's GitHub", () => {
   // testing the value returned by getGithub method
   it("Returns the Engineer's GitHub username", () => {
-    // expecting return value to be 'ZJY2017'
-    expect(engineer.getGithub()).toBe("ZJY2017");
+    // expecting return value to be 'addecapite'
+    expect(engineer.getGithub()).toBe("addecapite");
   });
 });
 // 'describing' -- (testing) -- Engineer class method getRole()
