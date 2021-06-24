@@ -1,25 +1,21 @@
-// including Employee class
-const Employee = require("./Employee");
+// including Employee class to test
+const Engineer = require("../lib/Engineer");
+// setting new Engineer with arguments into a variable
+const engineer = new Engineer("Zoe", 1, "zoe@email.com", "ZJY2017");
 
-// Engineer class extending Employee class used to return employee name, id, email, github
-class Engineer extends Employee {
-  // passing through arguments
-  constructor(name, id, email, github) {
-    // passing through original arguments from Employee class
-    super(name, id, email);
-    this.github = github;
-  }
-
-  // method to return employee github username
-  getGithub() {
-    return this.github;
-  }
-
-  // method to return employee role
-  getRole() {
-    return "Engineer";
-  }
-}
-
-// exporting Engineer class
-module.exports = Engineer;
+// 'describing' -- (testing) -- Engineer class method getGithub()
+describe("Engineer's GitHub", () => {
+  // testing the value returned by getGithub method
+  it("Returns the Engineer's GitHub username", () => {
+    // expecting return value to be 'ZJY2017'
+    expect(engineer.getGithub()).toBe("ZJY2017");
+  });
+});
+// 'describing' -- (testing) -- Engineer class method getRole()
+describe("Engineer's role", () => {
+  // testing the value returned by getRole method
+  it('Returns the role of the new employee as "Engineer"', () => {
+    // expecting return value to be 'Engineer'
+    expect(engineer.getRole()).toBe("Engineer");
+  });
+});
