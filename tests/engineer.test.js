@@ -1,8 +1,25 @@
-const Engineer = require("../library/engineer");
+// including Employee class
+const Employee = require("./Employee");
 
+// Engineer class extending Employee class used to return employee name, id, email, github
+class Engineer extends Employee {
+  // passing through arguments
+  constructor(name, id, email, github) {
+    // passing through original arguments from Employee class
+    super(name, id, email);
+    this.github = github;
+  }
 
-test("Github username?", () => {
-  const testGitHub = "adecapite";
-  const eng = new Engineer(1, "Anthony", "employee@employee.com", testGitHub);
-  expect(eng.getGitHub()).toequal(testGitHub);
-});
+  // method to return employee github username
+  getGithub() {
+    return this.github;
+  }
+
+  // method to return employee role
+  getRole() {
+    return "Engineer";
+  }
+}
+
+// exporting Engineer class
+module.exports = Engineer;

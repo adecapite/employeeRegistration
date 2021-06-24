@@ -1,26 +1,31 @@
 class Employee {
+  // passing through arguments
   constructor(name, id, email) {
     this.name = name;
     this.id = id;
     this.email = email;
   }
 
-  findName() {
+  // method to return employee name
+  getName() {
     return this.name;
   }
 
-  findId() {
+  // method to return employee id
+  getID() {
     return this.id;
   }
 
-  findEmail() {
+  // method to return employee email
+  getEmail() {
     return this.email;
   }
 
-  findRole() {
-    return this.role;
+  // method to return employee role
+  getRole() {
+    return "Employee";
   }
-
-
 }
+
+// exporting Employee class
 module.exports = Employee;

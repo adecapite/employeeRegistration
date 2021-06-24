@@ -1,19 +1,45 @@
+// including Employee class to test
 const Employee = require("../library/employee");
+// setting new Employee with arguments into a variable
+const employee = new Employee("Anthony", 1, "anthony@email.com");
 
-test("Employee name?", () => {
-  const testName = "Anthony";
-  const em = new Employee(1, testname, "employee@employee.com");
-  expect(em.findName()).toEqual(testName);
+// 'describing' -- (testing) -- Employee class
+describe("Employee", () => {
+  // testing the typeof the return value
+  it("Validates that the user input is formatted as an object", () => {
+    // expecting the type of employee to be an object
+    expect(typeof employee).toBe("object");
+  });
 });
-
-test("Employee id?", () => {
-  const testID = 18;
-  const em = new Employee(testID, "Anthony", "employee@employee.com");
-  expect(em.findId()).toEqual(testID);
+// 'describing' -- (testing) -- Employee class method getName()
+describe("Employee name", () => {
+  // testing the value returned by getName method
+  it("Returns the employee's name when a new employee is added", () => {
+    // expecting return value to be 'Zoe'
+    expect(employee.getName()).toBe("Anthony");
+  });
 });
-
-test("Employee email?", () => {
-  const testEmail = "employee@employee.com";
-  const em = newEmployee(1, "Anthony", testEmail);
-  expect(em.findEmail()).toEqual(testEmail)
+// 'describing' -- (testing) -- Employee class method getID()
+describe("Employee ID", () => {
+  // testing the value returned by getID method
+  it("Returns the Employee ID when a new employee is added", () => {
+    // expecting return value to be 1
+    expect(employee.getID()).toBe(1);
+  });
+});
+// 'describing' -- (testing) -- Employee class method getEmail()
+describe("Employee email", () => {
+  // testing the value returned by getEmail method
+  it("Returns the employee's email when a new employee is added", () => {
+    // expecting return value to be 'zoe@email.com'
+    expect(employee.getEmail()).toBe("anthony@email.com");
+  });
+});
+// 'describing' -- (testing) -- Employee class method getRole()
+describe("Employee role", () => {
+  // testing the value returned by getRole method
+  it('Returns the role of the new employee as "Employee"', () => {
+    // expecting return value to be 'Employee'
+    expect(employee.getRole()).toBe("Employee");
+  });
 });
