@@ -70,4 +70,7 @@ class RenderHTML {
 </html></div>
     </div>
 </body>
+</html></div>
+    </div>
+</body>
 </html>
