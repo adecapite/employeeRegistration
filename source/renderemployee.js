@@ -1,5 +1,5 @@
 // including Intern class
-const Intern = require("../lib/Intern");
+const Intern = require("../library/intern");
 
 // RenderEmployee class to render employee html
 class RenderEmployee {

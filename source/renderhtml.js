@@ -64,3 +64,10 @@ class RenderHTML {
   }
   
   module.exports = RenderHTML;
+</div>
+    </div>
+</body>
+</html></div>
+    </div>
+</body>
+</html>
